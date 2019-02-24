@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script>
+			function Render()
+			{
+            var operator = frmMain.opt.value;
+            var inputA = frm1.num1.value;
+            var inputB = frm2.num2.value;
+            
+            if (operator === "+") 
+	                {
+                	alert(Number(inputA) + Number(inputB));
+                	}
+                	else if (operator === "-") 
+                		{
+                		alert(inputA - inputB);
+                		}
+                		else if (operator === "*") 
+                			{
+                			alert(inputA * inputB);
+                			}
+                			else if (operator === "/") 
+                   				{
+                				alert(inputA / inputB);
+                				}
+
+			}
+		</script>
+	</head>
+	<body>
+        <form name="frmMain">
+                <label>Operation:</label>
+                <input type="opeartion" name="opt" />
+        </form>
+        <form name="frm1">
+                <label>Variable 1:</label>
+                <input type="variable 1" name="num1" />
+        </form>
+        <form name="frm2">
+                <label>Variable 2:</label>
+                <input type="variable 2" name="num2" />
+        </form>
+        <form>
+                <input type="submit" value="Click" onclick="Render()" />
+        </form>
+	</body>
+</html>
